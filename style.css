@@ -23,11 +23,10 @@ div {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border: deeppink solid 2px;
-  border-radius: 6%;
+  border-radius: 3%;
   margin: 3rem 1rem;
   padding: 10px 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 #0000004c, 0 6px 20px 0 #0000004c;
 }
 
 img {
@@ -37,6 +36,9 @@ img {
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
   -khtml-box-shadow: 10px 10px 5px #ccc;
+
+  margin: 5px 0;
+  padding: 5px 0;
 }
 
 button {
@@ -53,12 +55,14 @@ button:hover {
 
 p {
   margin: 5px 0;
-  padding: 0;
+  padding: 5px 0;
   text-align: center;
   font-style: italic;
 }
 
 h1 {
+  margin: 5px 0;
+  padding: 5px 0;
   color: deeppink;
   font-size: 30px;
 }
