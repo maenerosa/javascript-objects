@@ -2,7 +2,7 @@ const animals = [
   {
     id: 1,
     name: "Corgi",
-    price: 500,
+    price: "$" + 500,
     description:
       "A small, fluffy dog breed with a friendly and outgoing personality.",
     image:
@@ -12,7 +12,7 @@ const animals = [
   {
     id: 2,
     name: "Persian Cat",
-    price: 800,
+    price: "$" + 800,
     description:
       "A beautiful, long-haired cat breed known for their sweet and gentle personalities.",
     image:
@@ -22,7 +22,7 @@ const animals = [
   {
     id: 3,
     name: "African Grey Parrot",
-    price: 1200,
+    price: "$" + 1200,
     description:
       "A highly intelligent and talkative bird species that make great companions.",
     image: "https://i.ytimg.com/vi/RfXxh0Eff_w/maxresdefault.jpg",
@@ -31,7 +31,7 @@ const animals = [
   {
     id: 4,
     name: "Bearded Dragon",
-    price: 150,
+    price: "$" + 150,
     description:
       "A reptile species that are easy to care for and make great pets for beginners.",
     image:
@@ -41,7 +41,7 @@ const animals = [
   {
     id: 5,
     name: "Goldfish",
-    price: 10,
+    price: "$" + 10,
     description:
       "A popular freshwater fish species that are easy to care for and make great pets for kids.",
     image:
@@ -51,7 +51,7 @@ const animals = [
   {
     id: 6,
     name: "Rabbit",
-    price: 200,
+    price: "$" + 200,
     description:
       "A cute and cuddly small animal species that make great indoor pets.",
     image:
@@ -61,7 +61,7 @@ const animals = [
   {
     id: 7,
     name: "Bengal Cat",
-    price: 1000,
+    price: "$" + 1000,
     description:
       "A beautiful, spotted cat breed known for their energetic and playful personalities.",
     image:
@@ -71,27 +71,27 @@ const animals = [
   {
     id: 8,
     name: "French Bulldog",
-    price: 1500,
+    price: "$" + 1500,
     description:
       "A small, muscular dog breed known for their affectionate and playful personalities.",
     image:
-      "https://media.cnn.com/api/v1/images/stellar/prod/230315104436-01-french-bulldog-stock.jpg?c=2x3",
+      "https://cdn-6212c8e2c1ac198840e9c663.closte.com/wp-content/uploads/2022/08/arlene-tomkings-puppies-3-1024x683.jpg",
     category: "Dogs",
   },
   {
     id: 9,
     name: "Hamster",
-    price: 20,
+    price: "$" + 20,
     description:
       "A small, furry rodent species that are easy to care for and make great pets for kids.",
     image:
-      "https://www.collinsdictionary.com/images/full/hamster_102645029.jpg",
+      "https://petkeen.com/wp-content/uploads/2021/04/hamster-eating4-pixabay-760x506.jpg",
     category: "Small Animals",
   },
   {
     id: 10,
     name: "Siamese Fighting Fish",
-    price: 15,
+    price: "$" + 15,
     description:
       "A beautiful freshwater fish species that are easy to care for and come in a variety of colors.",
     image: "https://cdn.mos.cms.futurecdn.net/RY2EpSo74hvYXyAVpTN2Gg.jpg",
@@ -111,12 +111,16 @@ animals.forEach(function (animal) {
   const description = document.createElement("p");
   description.textContent = animal.description;
 
+  const image = document.createElement("img");
+  image.src = animal.image;
+
   const addToCardBtn = document.createElement("button");
   addToCardBtn.textContent = "Add to Cart";
 
   card.appendChild(title);
   card.appendChild(price);
   card.appendChild(description);
+  card.appendChild(image);
   card.appendChild(addToCardBtn);
 
   document.body.appendChild(card);
