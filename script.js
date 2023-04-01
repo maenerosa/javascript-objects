@@ -111,7 +111,7 @@ animals.forEach(function (animal) {
   const description = document.createElement("p");
   description.textContent = animal.description;
 
-  const image = document.createElement("img");
+  const image = new Image(400, 200);
   image.src = animal.image;
 
   const addToCardBtn = document.createElement("button");
