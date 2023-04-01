@@ -45,7 +45,7 @@ const animals = [
     description:
       "A popular freshwater fish species that are easy to care for and make great pets for kids.",
     image:
-      "https://image.petmd.com/files/styles/863x625/public/goldfish-swimmingtoward_285011336_0.jpg",
+      "https://www.thesprucepets.com/thmb/VTMd2H_oaAWkZ6GD5G4tHVKHJYI=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1370690855-691460005dd7426d9d716ed9c2b6ad8f.jpg",
     category: "Fish",
   },
   {
